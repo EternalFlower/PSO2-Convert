@@ -194,7 +194,7 @@ function convert()
 
 	var $text = '';
 	$text = $spool.substr((24 * 2));
-	$text = $races[$ext] + $text;
+	$text = $races[$version][$ext] + $text;
 
 	var $hash = get_hash(crc32(get_binary($text)).toHex());
 
